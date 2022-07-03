@@ -12,7 +12,7 @@ import java.util.ArrayList;
 import java.util.InputMismatchException;
 import  javax.swing.JOptionPane;
 
-@SuppressWarnings("SpellCheckingInspection")
+@SuppressWarnings("SpellCheckingInspection") // Silenciar erros de português
 
 public class Principal {
 
