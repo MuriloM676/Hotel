@@ -10,20 +10,22 @@ package br.dell.modelos;
  */
 
 import javafx.application.Application;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
 import javafx.scene.Scene;
 
+import javax.swing.*;
+import java.net.URL;
 import java.util.Objects;
 
 public class Principal extends Application{
-    @Override
+        @Override
     public void start(Stage primaryStage) {
         try{
            Pane root = FXMLLoader.load(getClass().getResource("Application.fxml"));
-           Scene scene = new Scene(root,400,400);
-           scene.getStylesheets().add(Objects.requireNonNull(getClass().getResource("Tela.fxml")).toExternalForm());
+           Scene scene = new Scene(root,360,500);
            primaryStage.setScene(scene);
            primaryStage.show();
         } catch (Exception e) {
