@@ -4,9 +4,10 @@ package br.dell.modelos;
  *
  * @author Murilo Martins
  * @version 4.0
- * @param recebe as informações(cpf,rg,nome,idade e endereço) de cada hóspede.
+ * @Param recebe as informações(cpf,rg,nome,idade e endereço) de cada hóspede.
  * @return cada metodo tem um return especifico. Ex.: Cpf tem o return CPF
  */
+
 public class Hospede {
     /* Criando classe modelo Hospede */
     private long CPF;

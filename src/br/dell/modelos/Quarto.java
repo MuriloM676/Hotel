@@ -4,7 +4,7 @@ package br.dell.modelos;
  *
  * @author Murilo Martins
  * @version 4.0
- * @param recebe o numero do Quarto e o cadastro do Hóspede.
+ * @Param recebe o numero do Quarto e o cadastro do Hóspede.
  * @return numero do quarto.
  */
 public class Quarto {
