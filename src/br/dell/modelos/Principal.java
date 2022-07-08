@@ -9,6 +9,7 @@ package br.dell.modelos;
  * @exception InputMismatchException valida de a idade contem apenas numeros do tipo int.
  */
 
+import com.sun.javafx.stage.EmbeddedWindow;
 import javafx.application.Application;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
@@ -17,6 +18,7 @@ import javafx.stage.Stage;
 import javafx.scene.Scene;
 
 import javax.swing.*;
+import java.io.IOException;
 import java.net.URL;
 import java.util.Objects;
 
@@ -35,4 +37,5 @@ public class Principal extends Application{
     public static void main(String[] args) {
         launch(args);
     }
+
 }
