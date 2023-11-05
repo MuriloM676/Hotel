@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="514.0" prefWidth="358.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.dell.modelos.Controller">
+   <children>
+      <BorderPane layoutX="14.0" layoutY="12.0" prefHeight="463.0" prefWidth="331.0">
+         <center>
+            <VBox prefHeight="486.0" prefWidth="331.0" spacing="10.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label text="Nome:" />
+                  <TextField fx:id="nameT" onAction="#nameT" />
+                  <Label prefHeight="17.0" prefWidth="149.0" text="Endereço:" />
+                  <TextField fx:id="adress" onAction="#adrresT" />
+                  <Label prefHeight="17.0" prefWidth="98.0" text="CPF:" />
+                  <TextField fx:id="cpf" onAction="#cpfT" />
+                  <Label text="RG:" />
+                  <TextField fx:id="rg" />
+                  <Label prefHeight="17.0" prefWidth="103.0" text="Idade:" />
+                  <TextField fx:id="age" onAction="#idadeT" />
+                  <Label prefHeight="17.0" prefWidth="103.0" text="Sexo:" />
+                  <HBox prefHeight="17.0" prefWidth="331.0" spacing="10.0">
+                     <children>
+                        <RadioButton fx:id="masc" mnemonicParsing="false" text="M">
+                           <toggleGroup>
+                              <ToggleGroup fx:id="radioGroup" />
+                           </toggleGroup>
+                        </RadioButton>
+                        <RadioButton fx:id="fem" mnemonicParsing="false" text="F" toggleGroup="$radioGroup" />
+                     </children>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </HBox>
+                  <Label prefHeight="17.0" prefWidth="103.0" text="Quartos:" />
+                  <ComboBox prefHeight="25.0" prefWidth="53.0" />
+                  <HBox prefHeight="17.0" prefWidth="331.0" spacing="10.0">
+                     <children>
+                        <CheckBox fx:id="chkin" mnemonicParsing="false" text="Check-In" />
+                        <CheckBox fx:id="ckhout" mnemonicParsing="false" text="Check-Out" />
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="27.0" prefWidth="331.0" spacing="10.0">
+                     <children>
+                        <Button mnemonicParsing="false" onAction="#bts_press" text="Salvar" />
+                        <Button fx:id="search" mnemonicParsing="false" onAction="#btb_press" text="Buscar" />
+                        <Button fx:id="remove" mnemonicParsing="false" onAction="#btr_press" text="Remover" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>
